@@ -16,7 +16,7 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const res = await fetch("http://localhost:3000/api/topics", {
+    const res = await fetch("process.env.API_URL/api/topics", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
